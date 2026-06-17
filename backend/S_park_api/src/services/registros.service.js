@@ -123,6 +123,9 @@ const createRegistroVoz = async (pacienteId, audioBase64, explicitMedicoId = nul
   if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
     baseUrl = `http://${baseUrl}`;
   }
+  if (baseUrl && (baseUrl.includes('http://spark-ia') || baseUrl.includes('http://spark-ia-8zi1')) && !baseUrl.includes('.onrender.com')) {
+    baseUrl = 'https://spark-ia-8zi1.onrender.com';
+  }
   const flaskUrl = `${baseUrl}/api/predict_audio`;
 
   let data;
@@ -211,6 +214,9 @@ const probarModelos = async (features) => {
   let baseUrl = process.env.ML_API_URL || process.env.FLASK_API_URL || 'http://localhost:5000';
   if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
     baseUrl = `http://${baseUrl}`;
+  }
+  if (baseUrl && (baseUrl.includes('http://spark-ia') || baseUrl.includes('http://spark-ia-8zi1')) && !baseUrl.includes('.onrender.com')) {
+    baseUrl = 'https://spark-ia-8zi1.onrender.com';
   }
   const response = await axios.post(`${baseUrl}/api/predict`, features, { timeout: 30000 });
   return response.data;
