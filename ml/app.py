@@ -7,6 +7,9 @@
 =============================================================
 """
 
+import os
+os.environ['NUMBA_DISABLE_JIT'] = '1'
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
