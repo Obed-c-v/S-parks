@@ -28,6 +28,13 @@ app.config['MAX_CONTENT_LENGTH'] = 20 * 1024 * 1024  # 20 MB máximo por request
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 
+# Inicializar variables de modelo y escaladores
+scaler_ox = None
+scaler_up = None
+model_rf_binary = None
+model_rf_risk = None
+MODEL_LOAD_ERROR = None
+
 # Cargar los escaladores y modelos (Únicamente Random Forest)
 print("[INFO] Cargando modelos de producción (Random Forest)...")
 try:
@@ -40,6 +47,7 @@ try:
     
     print("[SUCCESS] Modelos Random Forest y escaladores cargados correctamente.")
 except Exception as e:
+    MODEL_LOAD_ERROR = str(e)
     print(f"[ERROR] Error al cargar los modelos: {e}")
     print("[WARNING] Asegúrate de haber entrenado los modelos con train_rf.py.")
 
@@ -182,15 +190,26 @@ def save_test_record(normalized_data, status_val):
 
 @app.route('/', methods=['GET'])
 def index():
+    import sys
+    import sklearn
     return jsonify({
         "status": "running",
         "service": "S-Park IA API",
-        "model": "Random Forest"
+        "model": "Random Forest",
+        "python_version": sys.version,
+        "scikit_learn_version": sklearn.__version__,
+        "models_loaded": model_rf_binary is not None and model_rf_risk is not None,
+        "model_load_error": MODEL_LOAD_ERROR
     }), 200
 
 @app.route('/api/predict', methods=['POST'])
 def predict():
     try:
+        if model_rf_binary is None or model_rf_risk is None:
+            return jsonify({
+                "error": f"Modelos no cargados en el servidor. Detalles: {MODEL_LOAD_ERROR}"
+            }), 503
+            
         data = request.get_json()
         if not data:
             return jsonify({"error": "No data provided"}), 400
@@ -290,6 +309,11 @@ def predict():
 @app.route('/api/predict_audio', methods=['POST'])
 def predict_audio():
     try:
+        if model_rf_binary is None or model_rf_risk is None:
+            return jsonify({
+                "error": f"Modelos no cargados en el servidor. Detalles: {MODEL_LOAD_ERROR}"
+            }), 503
+            
         data_json = request.get_json()
         if not data_json or 'audio' not in data_json:
             return jsonify({"error": "No audio data provided"}), 400
