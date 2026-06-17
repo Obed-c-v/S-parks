@@ -119,7 +119,10 @@ const getDashboardStats = async (medicoId, rol) => {
 
 const createRegistroVoz = async (pacienteId, audioBase64, explicitMedicoId = null) => {
   // 1. Enviar audio al microservicio Flask
-  const baseUrl = process.env.ML_API_URL || process.env.FLASK_API_URL || 'http://localhost:5000';
+  let baseUrl = process.env.ML_API_URL || process.env.FLASK_API_URL || 'http://localhost:5000';
+  if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
+    baseUrl = `http://${baseUrl}`;
+  }
   const flaskUrl = `${baseUrl}/api/predict_audio`;
 
   let data;
@@ -205,7 +208,10 @@ const createRegistroVoz = async (pacienteId, audioBase64, explicitMedicoId = nul
 };
 
 const probarModelos = async (features) => {
-  const baseUrl = process.env.ML_API_URL || process.env.FLASK_API_URL || 'http://localhost:5000';
+  let baseUrl = process.env.ML_API_URL || process.env.FLASK_API_URL || 'http://localhost:5000';
+  if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
+    baseUrl = `http://${baseUrl}`;
+  }
   const response = await axios.post(`${baseUrl}/api/predict`, features, { timeout: 30000 });
   return response.data;
 };
