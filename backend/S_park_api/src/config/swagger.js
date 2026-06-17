@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const servers = isProduction
   ? [
       {
-        url: process.env.API_BASE_URL || 'https://spark-backend-sk78.onrender.com/api',
+        url: process.env.API_BASE_URL || 'https://spark-backend-8zi1.onrender.com/api',
         description: 'Servidor de Producción (Render)',
       },
       {
@@ -19,7 +19,7 @@ const servers = isProduction
         description: 'Servidor de Desarrollo (local)',
       },
       {
-        url: process.env.API_BASE_URL || 'https://spark-backend-sk78.onrender.com/api',
+        url: process.env.API_BASE_URL || 'https://spark-backend-8zi1.onrender.com/api',
         description: 'Servidor de Producción (Render)',
       },
     ];
