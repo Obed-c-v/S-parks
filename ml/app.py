@@ -538,24 +538,27 @@ def predict_audio():
         # ============================================================
         # CONSTRUCCIÓN DE LA INTERPRETACIÓN CLÍNICA
         # ============================================================
+        # Mapear nivel de severidad a terminología clínica más clara
+        severity_desc = "inicial (leve)" if risk_level == 'BAJO' else "avanzado (moderado-severo)"
+
         if prob_parkinson < 30:
             interpretation = (
                 f"El análisis acústico indica estabilidad en las frecuencias vocales "
                 f"con una probabilidad muy baja de presencia de la enfermedad ({prob_parkinson:.1f}%). "
-                f"La severidad de los síntomas motores laringeos estimados se asocia a un nivel de riesgo {risk_level}."
+                f"La severidad de los síntomas motores laringeos estimados se asocia a un nivel {severity_desc}."
             )
         elif prob_parkinson < 70:
             interpretation = (
                 f"Se detectan fluctuaciones leves en los armónicos y jitter. La probabilidad de "
                 f"presencia de la enfermedad se clasifica como MODERADA ({prob_parkinson:.1f}%). "
-                f"Sin embargo, la severidad de los temblores vocales detectados se asocia a un nivel de riesgo motor {risk_level}, "
+                f"La severidad de los temblores vocales detectados se asocia a una etapa {severity_desc}, "
                 f"por lo que se sugiere seguimiento médico preventivo."
             )
         else:
             interpretation = (
                 f"ATENCION: Se identifican alteraciones acústicas significativas (shimmer y jitter elevados, HNR disminuido) "
-                f"altamente compatibles con disfonía parkinsoniana (probabilidad de presencia de la enfermedad del {prob_parkinson:.1f}%). "
-                f"El nivel de severidad de los síntomas motores laringeos se estima como {risk_level}. "
+                f"compatibles con disfonía parkinsoniana (probabilidad de presencia de la enfermedad del {prob_parkinson:.1f}%). "
+                f"La severidad de los síntomas motores laringeos se estima en una etapa {severity_desc}. "
                 f"Se recomienda priorización diagnóstica y consulta neurológica."
             )
             
