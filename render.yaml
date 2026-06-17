@@ -24,6 +24,11 @@ services:
         fromDatabase:
           name: spark-db
           property: connectionString
+      - key: ML_API_URL
+        fromService:
+          type: web
+          name: spark-ia
+          property: host
       - key: FLASK_API_URL
         fromService:
           type: web
