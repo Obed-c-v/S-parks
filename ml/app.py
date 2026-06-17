@@ -180,6 +180,14 @@ def save_test_record(normalized_data, status_val):
     except Exception as e:
         print(f"[ERROR] No se pudo guardar el registro de prueba: {e}")
 
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({
+        "status": "running",
+        "service": "S-Park IA API",
+        "model": "Random Forest"
+    }), 200
+
 @app.route('/api/predict', methods=['POST'])
 def predict():
     try:
