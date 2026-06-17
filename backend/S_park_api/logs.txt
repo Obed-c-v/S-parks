@@ -1,0 +1,110 @@
+[LOG] 2026-03-23T00:23:21.712Z: Server is running on port 3000
+[LOG] 2026-03-23T00:23:21.714Z: Swagger Docs available at http://localhost:3000/api/docs
+[LOG] 2026-03-23T00:23:23.998Z: =========================================
+[LOG] 2026-03-23T00:23:23.998Z: 🔑 TOKEN GENERADO AUTOMÁTICAMENTE
+[LOG] 2026-03-23T00:23:23.998Z: =========================================
+[LOG] 2026-03-23T00:23:23.998Z: Copia el siguiente token para usar en Swagger:
+[LOG] 2026-03-23T00:23:23.998Z: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2wiOiJBRE1JTiIsIm1lZGljb19pZCI6bnVsbCwiaWF0IjoxNzc0MjI1NDAzLCJleHAiOjE3NzQzMTE4MDN9.GzOjGDvyOYaNCy3Kpfj8DOg9ZkqHdCHoCPdjdVzdS-Q
+
+[LOG] 2026-03-23T00:23:23.998Z: =========================================
+[LOG] 2026-03-23T00:23:23.998Z: Instrucciones para Swagger (/api/docs):
+[LOG] 2026-03-23T00:23:23.998Z: 1. Haz clic en el botón "Authorize"
+[LOG] 2026-03-23T00:23:23.998Z: 2. Pega el token directamente (sin prefijos si ya tiene)
+[LOG] 2026-03-23T00:23:23.998Z: 3. ¡Listo! Ya puedes probar los endpoints protegidos.
+[LOG] 2026-03-23T00:23:23.998Z: =========================================
+[LOG] 2026-03-23T00:37:12.407Z: Server is running on port 3000
+[LOG] 2026-03-23T00:37:12.410Z: Swagger Docs available at http://localhost:3000/api/docs
+[LOG] 2026-03-23T00:37:15.146Z: =========================================
+[LOG] 2026-03-23T00:37:15.147Z: 🔑 TOKEN GENERADO AUTOMÁTICAMENTE
+[LOG] 2026-03-23T00:37:15.148Z: =========================================
+[LOG] 2026-03-23T00:37:15.148Z: Copia el siguiente token para usar en Swagger:
+[LOG] 2026-03-23T00:37:15.148Z: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2wiOiJBRE1JTiIsIm1lZGljb19pZCI6bnVsbCwiaWF0IjoxNzc0MjI2MjM1LCJleHAiOjE3NzQzMTI2MzV9.bcx5y79n1jVfJgnBR6rYotsZ4Z5CXqHnGKsmD9qaYoc
+
+[LOG] 2026-03-23T00:37:15.148Z: =========================================
+[LOG] 2026-03-23T00:37:15.148Z: Instrucciones para Swagger (/api/docs):
+[LOG] 2026-03-23T00:37:15.148Z: 1. Haz clic en el botón "Authorize"
+[LOG] 2026-03-23T00:37:15.148Z: 2. Pega el token directamente (sin prefijos si ya tiene)
+[LOG] 2026-03-23T00:37:15.148Z: 3. ¡Listo! Ya puedes probar los endpoints protegidos.
+[LOG] 2026-03-23T00:37:15.148Z: =========================================
+[LOG] 2026-03-23T00:44:12.109Z: User attempting registration:
+[LOG] 2026-03-23T00:44:12.109Z: Registration data:
+[ERR] 2026-03-23T01:08:39.261Z: undefined
+[LOG] 2026-03-23T01:09:59.248Z: Server is running on port 3000
+[LOG] 2026-03-23T01:09:59.250Z: Swagger Docs available at http://localhost:3000/api/docs
+[LOG] 2026-03-23T01:10:01.541Z: =========================================
+[LOG] 2026-03-23T01:10:01.542Z: 🔑 TOKEN GENERADO AUTOMÁTICAMENTE
+[LOG] 2026-03-23T01:10:01.542Z: =========================================
+[LOG] 2026-03-23T01:10:01.542Z: Copia el siguiente token para usar en Swagger:
+[LOG] 2026-03-23T01:10:01.542Z: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2wiOiJBRE1JTiIsIm1lZGljb19pZCI6bnVsbCwiaWF0IjoxNzc0MjI4MjAxLCJleHAiOjE3NzQzMTQ2MDF9.KrAm_KZ62vX2ndUss2aM4B3hlc3qQQZPrlYIau04du8
+
+[LOG] 2026-03-23T01:10:01.542Z: =========================================
+[LOG] 2026-03-23T01:10:01.542Z: Instrucciones para Swagger (/api/docs):
+[LOG] 2026-03-23T01:10:01.542Z: 1. Haz clic en el botón "Authorize"
+[LOG] 2026-03-23T01:10:01.542Z: 2. Pega el token directamente (sin prefijos si ya tiene)
+[LOG] 2026-03-23T01:10:01.542Z: 3. ¡Listo! Ya puedes probar los endpoints protegidos.
+[LOG] 2026-03-23T01:10:01.542Z: =========================================
+[LOG] 2026-03-23T01:10:08.555Z: Server is running on port 3000
+[LOG] 2026-03-23T01:10:08.557Z: Swagger Docs available at http://localhost:3000/api/docs
+[LOG] 2026-03-23T01:10:10.834Z: =========================================
+[LOG] 2026-03-23T01:10:10.834Z: 🔑 TOKEN GENERADO AUTOMÁTICAMENTE
+[LOG] 2026-03-23T01:10:10.834Z: =========================================
+[LOG] 2026-03-23T01:10:10.834Z: Copia el siguiente token para usar en Swagger:
+[LOG] 2026-03-23T01:10:10.834Z: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2wiOiJBRE1JTiIsIm1lZGljb19pZCI6bnVsbCwiaWF0IjoxNzc0MjI4MjEwLCJleHAiOjE3NzQzMTQ2MTB9.PnDv5WcADLC8cb1hMvs4Qya2hej1xwCjQhhyK3mF_Lk
+
+[LOG] 2026-03-23T01:10:10.834Z: =========================================
+[LOG] 2026-03-23T01:10:10.834Z: Instrucciones para Swagger (/api/docs):
+[LOG] 2026-03-23T01:10:10.834Z: 1. Haz clic en el botón "Authorize"
+[LOG] 2026-03-23T01:10:10.834Z: 2. Pega el token directamente (sin prefijos si ya tiene)
+[LOG] 2026-03-23T01:10:10.834Z: 3. ¡Listo! Ya puedes probar los endpoints protegidos.
+[LOG] 2026-03-23T01:10:10.834Z: =========================================
+[LOG] 2026-03-23T01:13:57.738Z: Server is running on port 3000
+[LOG] 2026-03-23T01:13:57.739Z: Swagger Docs available at http://localhost:3000/api/docs
+[LOG] 2026-03-23T01:13:59.992Z: =========================================
+[LOG] 2026-03-23T01:13:59.992Z: 🔑 TOKEN GENERADO AUTOMÁTICAMENTE
+[LOG] 2026-03-23T01:13:59.992Z: =========================================
+[LOG] 2026-03-23T01:13:59.992Z: Copia el siguiente token para usar en Swagger:
+[LOG] 2026-03-23T01:13:59.992Z: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJyb2wiOiJBRE1JTiIsIm1lZGljb19pZCI6bnVsbCwiaWF0IjoxNzc0MjI4NDM5LCJleHAiOjE3NzQzMTQ4Mzl9.ooqkuoNp-YkH6Ixb4-AWWwNY1pobLeuSaPLqg8Zrdqw
+
+[LOG] 2026-03-23T01:13:59.992Z: =========================================
+[LOG] 2026-03-23T01:13:59.992Z: Instrucciones para Swagger (/api/docs):
+[LOG] 2026-03-23T01:13:59.992Z: 1. Haz clic en el botón "Authorize"
+[LOG] 2026-03-23T01:13:59.992Z: 2. Pega el token directamente (sin prefijos si ya tiene)
+[LOG] 2026-03-23T01:13:59.992Z: 3. ¡Listo! Ya puedes probar los endpoints protegidos.
+[LOG] 2026-03-23T01:13:59.992Z: =========================================
+[AUTH-LOG] 2026-03-23T02:04:37.143Z: Register request body:
+[AUTH-LOG] 2026-03-23T02:04:37.148Z: {
+  "nombre": "roberto",
+  "apellido": "Capistrán Velázquez",
+  "email": "JohnDoe@uu.com",
+  "password": "123456",
+  "especialidad": "Neurología",
+  "numero_licencia": "12345678",
+  "telefono": "8117989907",
+  "activo": true
+}
+[AUTH-LOG] 2026-03-23T02:08:30.213Z: Register request body:
+[AUTH-LOG] 2026-03-23T02:08:30.217Z: {
+  "nombre": "roberto",
+  "apellido": "Capistrán Velázquez",
+  "email": "JohnDoe@uu.com",
+  "password": "123456",
+  "especialidad": "Neurología",
+  "numero_licencia": "12345678",
+  "telefono": "8117989907",
+  "activo": true
+}
+[AUTH-LOG] 2026-03-23T02:10:13.125Z: Register request body:
+[AUTH-LOG] 2026-03-23T02:10:13.133Z: {
+  "email": "capo@gmail.com",
+  "password": "1233444",
+  "nombre": "roberto",
+  "apellido": "martines martines",
+  "especialidad": "neurologo",
+  "numero_licencia": "1223233u3211",
+  "telefono": "21376833"
+}

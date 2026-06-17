@@ -1,0 +1,22 @@
+# Python
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/outputs/*.csv
+
+# Node / Express
+**/node_modules/
+**/.env
+**/uploads/
+**/logs/
+**/*.log
+**/last-token.txt
+**/schema-output.txt
+
+# System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
